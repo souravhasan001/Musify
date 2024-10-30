@@ -1,0 +1,257 @@
+/* General Styles */
+.logo {
+    height: 1em; /* Adjust the height to match the text size */
+    vertical-align: middle; /* Align the logo vertically with the text */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #13b398;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Header */
+header {
+    background: #0291e4;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header h1 {
+    text-align: center;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    background: url('images/music-hero.jpg') no-repeat center center/cover;
+    color: #000000;
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.hero .btn {
+    background: #1db954;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Tracks Section */
+.tracks {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.tracks .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#track-list {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.track-item {
+    padding: 1rem;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+.track-item:hover {
+    background: #eee;
+}
+
+/* Player Section */
+.player {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.player .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player-controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#progress, #volume {
+    width: 150px;
+}
+
+.btn {
+    background: #1db954;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #1ed760;
+}
+
+/* Footer Section */
+footer {
+    background: #1db954;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Tracks Section */
+.tracks {
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Track List */
+#track-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.track-item {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.track-item:hover {
+    background-color: #f0f0f0;
+}
+
+/* Track Cards */
+.track-card {
+    display: inline-block;
+    width: 200px;
+    margin: 15px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.track-card:hover {
+    transform: scale(1.05);
+}
+
+.track-card img {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.track-info {
+    padding: 10px;
+}
+
+.track-info h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+    color: #333;
+}
+
+.track-info p {
+    margin: 0;
+    color: #666;
+}
+
+/* Player Section */
+.player {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.player-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.btn {
+    padding: 10px 15px;
+    margin: 0 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+input[type="range"] {
+    margin: 0 10px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .track-card {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
